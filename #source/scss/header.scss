@@ -1,0 +1,43 @@
+.container--header {
+  max-width: 600px;
+  padding: 68px 16px 0px 16px;
+
+  .menu-wrap {
+    @extend %flex-spb;
+
+    @media (max-width: 567px) {
+      & {
+        display: block;
+      }
+    }
+
+    .menu__links {
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: $menu-links;
+
+      @media (max-width: 567px) {
+        & {
+          display: block;
+          margin: 23px 0px;
+        }
+
+        &:first-child {
+          margin: 0px;
+        }
+      }
+
+      &:hover {
+        color: $green;
+        transition-duration: 0.5s;
+      }
+    }
+
+    & img {
+      @extend %image;
+    }
+  }
+}

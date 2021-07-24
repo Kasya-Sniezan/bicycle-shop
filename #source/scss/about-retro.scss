@@ -1,0 +1,83 @@
+.container--about-retro {
+  width: 100%;
+
+  .about-retro__row {
+    display: flex;
+    margin: 0px;
+
+    @media (max-width: 768px) {
+      & {
+        display: block;
+      }
+    }
+
+    .about-retro__col {
+      flex: 0 1 33.333%;
+      min-height: 600px;
+      padding: 0px;
+
+      &--first {
+        position: relative;
+
+        & img {
+          @extend %image-big;
+        }
+
+        &::after {
+          content: url(../images/icons/logo_bicycle.png);
+          @extend %background-img-after;
+        }
+      }
+
+      &--second {
+        display: flex;
+        flex-direction: column;
+
+        .about-retro__text-wrap {
+          padding: 70px;
+          position: relative;
+
+          &::after {
+            @extend %trigon;
+          }
+
+          .icon-wrap {
+            margin: 0px 0px 20px 0px;
+
+            .icon {
+              @extend %image;
+            }
+          }
+
+          .title--about-retro {
+            margin-bottom: 26px;
+          }
+
+          .about-retro__text {
+            @extend %about-text;
+
+            &::after {
+              @extend %about-text-after;
+            }
+          }
+        }
+
+        .small-img-wrap {
+          flex: 1 1 auto;
+          min-height: 200px;
+
+          & img {
+            @extend %image-big;
+          }
+        }
+      }
+
+      &--third {
+
+        & img {
+          @extend %image-big;
+        }
+      }
+    }
+  }
+}

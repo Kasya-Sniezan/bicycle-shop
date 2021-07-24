@@ -1,0 +1,22 @@
+.about-us {
+  .container--about-us {
+    max-width: 1088px;
+    padding: 117px 16px 142px 16px;
+
+    .about-us__icon-wrap {
+      margin-bottom: 35px;
+
+      & img {
+        @extend %image;
+      }
+    }
+
+    .about-us__text {
+      font-size: 18px;
+      line-height: 34px;
+      font-weight: 400;
+      color: $text;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import "reset.scss";
+
+$beige-bckg: #f7f7f7;
+$white-bckg: #ffffff;
+$black-bckg: #282f35;
+$green: #64c29e;
+$title: #353738;
+$text: #848789;
+$menu-links: #4d4959;
+
+%flex-spb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%background-img-after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+%about-text {
+  font-size: 16px;
+  line-height: 30px;
+  color: $text;
+  text-align: justify;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+%about-text-after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: rgba(53, 55, 56, 0.2);
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+%trigon {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: -20px;
+  border: 10px solid transparent;
+  border-top: 10px solid $white-bckg;
+}
+
+%image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+%image-big {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.--icon {
+  margin: 0 auto;
+}
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-bottom: 25spx;
+  color: $title;
+
+  &--about-us {
+    margin-bottom: 35px;
+  }
+
+  &--about-product {
+    margin-bottom: 26px;
+  }
+}
+
+.main {
+  background-image: url('../images/bg_main.jpg');
+  background-position: top center;
+  background-attachment: fixed;
+  min-height: 800px;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+@import "header.scss";
+@import "about-us.scss";
+@import "about-product.scss";
+@import "about-retro.scss";
+@import "slider.scss";
+@import "shop-img.scss";
+@import "go-to-shop.scss";
+@import "form-section.scss";
+@import "footer.scss";

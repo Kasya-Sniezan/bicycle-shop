@@ -1,0 +1,92 @@
+.container--shop-img {
+  width: 100%;
+
+  .shop-img__row {
+    display: flex;
+    margin: 0px;
+
+    @media (max-width: 800px) {
+      & {
+        display: block;
+      }
+    }
+
+    .shop-img__col {
+      flex: 1 1 33.333%;
+      padding: 0px;
+      display: flex;
+      max-height: 534px;
+
+      &--narrow {
+        @media (max-width: 800px) {
+          & {
+            display: none;
+          }
+        }
+      }
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 800px) {
+          & {
+            flex-direction: row;
+          }
+        }
+
+        .row-mini {
+          display: flex;
+          margin: 0px;
+
+          .col-mini {
+            flex: 1 1 50%;
+            padding: 0px;
+          }
+        }
+
+        .col-big {
+          flex: 1 1 auto;
+        }
+
+      }
+
+      .col-big-hover {
+        position: relative;
+        background-color: rgba(100, 194, 158, 1);
+        opacity: 1;
+
+        &::before {
+          content: url(../images/icons/bicycle_icon.png);
+          @extend %background-img-after;
+        }
+
+        &::after {
+          content: 'shop now';
+          position: absolute;
+          top: 65%;
+          left: 50%;
+          transform: translate(-50%, -65%);
+          z-index: 5;
+          font-size: 14px;
+          line-height: 1.2;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          color: $white-bckg;
+        }
+
+        & img {
+          min-height: 267px;
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+}
