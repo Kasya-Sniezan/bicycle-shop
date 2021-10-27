@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AOD bicycle</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   </head>
   <body>
@@ -164,66 +161,64 @@
 
     <section class="slider">
       <div class="container container--slider">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="slider-img-wrap">
-                <img
-                  src="./images/icons/twitter_icon.png"
-                  alt=""
-                  class="--icon"
-                />
-              </div>
-              <p class="slider__title">
-                AOD New York @aod
-                <span class="slider__title--part">/ 35 min;</span>
-              </p>
-              <p class="slider__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-                doloribus dolorem minima? Nihil obcaecati culpa facilis, nostrum
-                quas id ipsum.
-              </p>
+        <div class="slick-slider">
+          <div class="slide__item">
+            <div class="slide__img-wrap">
+              <img
+                src="./images/icons/twitter_icon.png"
+                alt=""
+                class="--icon"
+              />
             </div>
-
-            <div class="swiper-slide">
-              <div class="slider-img-wrap">
-                <img
-                  src="./images/icons/twitter_icon.png"
-                  alt=""
-                  class="--icon"
-                />
-              </div>
-              <p class="slider__title">
-                AOD Texas @greenH
-                <span class="slider__title--part">/ 55 min;</span>
-              </p>
-              <p class="slider__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-                doloribus dolorem minima? Nihil obcaecati culpa facilis, nostrum
-                quas id ipsum. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
-              </p>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="slider-img-wrap">
-                <img
-                  src="./images/icons/twitter_icon.png"
-                  alt=""
-                  class="--icon"
-                />
-              </div>
-              <p class="slider__title">
-                AOD Washington @MayKolt
-                <span class="slider__title--part">/ 11 min;</span>
-              </p>
-              <p class="slider__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-                doloribus dolorem minima?
-              </p>
-            </div>
+            <p class="slide__title">
+              AOD New York @aod
+              <span class="slide__title--part">/ 35 min;</span>
+            </p>
+            <p class="slide__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+              doloribus dolorem minima? Nihil obcaecati culpa facilis, nostrum
+              quas id ipsum.
+            </p>
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="slide__item">
+            <div class="slide__img-wrap">
+              <img
+                src="./images/icons/twitter_icon.png"
+                alt=""
+                class="--icon"
+              />
+            </div>
+            <p class="slide__title">
+              AOD Texas @greenH
+              <span class="slide__title--part">/ 55 min;</span>
+            </p>
+            <p class="slide__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+              doloribus dolorem minima? Nihil obcaecati culpa facilis, nostrum
+              quas id ipsum. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Velit, laudantium incidunt.
+            </p>
+          </div>
+
+          <div class="slide__item">
+            <div class="slide__img-wrap">
+              <img
+                src="./images/icons/twitter_icon.png"
+                alt=""
+                class="--icon"
+              />
+            </div>
+            <p class="slide__title">
+              AOD Washington @MayKolt
+              <span class="slide__title--part">/ 11 min;</span>
+            </p>
+            <p class="slide__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
+              doloribus dolorem minima?
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -341,7 +336,8 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="./#source/js/slick.min.js"></script> -->
+    <script src="./#source/js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
